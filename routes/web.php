@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**vehicule routes */
+Route::resource('vehicule','VehiculeController');
+/** Marque routes */
+Route::resource('marque','MarqueController');
+/** Modele routes */
+Route::resource('modele','ModeleController');

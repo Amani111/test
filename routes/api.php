@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('All-vehicule', 'ApiController@AllVehicle');
+Route::get('All-marque', 'ApiController@Allmarques');
+Route::get('All-modele', 'ApiController@AllModeles');
+Route::get('Show-Vehicule/{vehicule}', 'ApiController@showVehicule');
+Route::patch('Update-Vehicule/{vehicule}', 'ApiController@updateVehicule');
